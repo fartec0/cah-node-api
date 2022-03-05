@@ -18,13 +18,13 @@ http.createServer((req, res) => {
     res.write(answer());
   else if (path === '/pick')
     res.write(JSON.stringify(pick()));
-  else if (path === '/loaderio-2bc3a09986d3d7ae3640b3fa3808459b')
+  else //if (path === '/loaderio-2bc3a09986d3d7ae3640b3fa3808459b')
     res.write(`loaderio-2bc3a09986d3d7ae3640b3fa3808459b`);
-  else
-    res.write(`USAGE:
-               /question - get a random white card
-               /answer - get a random black card
-               /pick - get a question and answer randomly chosen`);
+//   else
+//     res.write(`USAGE:
+//                /question - get a random white card
+//                /answer - get a random black card
+//                /pick - get a question and answer randomly chosen`);
 
   return res.end();
 
